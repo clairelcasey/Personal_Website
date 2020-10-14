@@ -5,31 +5,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="container">
+    <header>
         <div class="nav-wrapper">
-            <div class="left-side">
-                <div class="logo">
+            <nav>
+                <div class="nav-logo">
                     <a href="index.html">CLAIRE CASEY</a>
                 </div>
-            </div>
-            <div class="right-side">
-                <div class="nav-link-wrapper">
-                    <a href="index.html">About</a>
-                </div>
-                <div class="nav-link-wrapper">
-                    <a href="projects.html">Projects</a>
-                </div>
-                <div class="nav-link-wrapper">
-                    <a href="contact.html">Connect</a>
-                </div>
-                
-            </div>
-        </div>
 
+                <div class="menu-icons open">
+                    <i class="icon ion-md-menu"></i>
+                </div>
+
+                <ul class="nav-list">
+                    <div class="menu-icons close">
+                        <i class="icon ion-md-close"></i>
+                    </div>
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link" class="active-page" >About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="projects.html" class="nav-link">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link">Connect</a>
+                    </li>
+                </ul>
+
+            </nav>
+        </div>
+    </header>
+
+
+
+ 
+
+
+    <div class="container"></div>
         <div class="about-wrapper">
             <div class="about-headshot">
                 <img src="static/media/headshot.jpg" alt="Claire Headshot">
@@ -37,10 +53,10 @@
             </div>
             <div class="about-paragraph">
                 <div class="about-ParagraphCard">
-                    <h1>About Me</h1>
+                    <h1>ABOUT ME.</h1>
                     <div class="about-ParagraphCard-text">
-                        <strong>Hi, I'm Claire! </strong>
-                        <p>I am a software engineer studying at Rithm School. I've been working as a transportation planner for the past year, collaborating to find sustainable, equitable, and vibrant communities</p>
+                        <h3>Hi, I'm Claire! </h3>
+                        <p>I am a software engineer studying at <a style = " white-space:nowrap; " href="https://www.rithmschool.com/">Rithm School</a>. I've been working as a transportation planner for the past year, collaborating to find sustainable, equitable, and vibrant communities</p>
                         <p>I started my career in transportation planning, where I worked on systemic safety analysis reports, creating internal databases. I love blah blah blah. </p>
                         <p>In my free time, you can find me deep in a puzzle, book, or out exploring the world! </p>
                         <p>more text more text In my free time, you can find me deep in a puzzle, book, or out exploring the world!</p>
@@ -58,5 +74,18 @@
             </div>
         </div>
     </div>
+
+
+    <script type="text/javascript" src="script.js"></script>
+    <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script>
+        $(function(){
+            $('a').each(function(){
+                if ($(this).prop('href') == window.location.href) {
+                 $(this).addClass('active-page'); $(this).parents('li').addClass('active-page');
+                }
+            });
+        });
+    </script>
 </body>
 </html>

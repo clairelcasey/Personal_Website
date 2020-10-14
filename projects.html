@@ -3,13 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects</title>
+    <title>Home</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="placeholder">
-        This is a placeholder
-    </div>
+    <header>
+        <div class="nav-wrapper">
+            <nav>
+                <div class="nav-logo">
+                    <a href="index.html">CLAIRE CASEY</a>
+                </div>
+
+                <div class="menu-icons open">
+                    <i class="icon ion-md-menu"></i>
+                </div>
+
+                <ul class="nav-list">
+                    <div class="menu-icons close">
+                        <i class="icon ion-md-close"></i>
+                    </div>
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link" class="active-page" >About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="projects.html" class="nav-link">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link">Connect</a>
+                    </li>
+                </ul>
+
+            </nav>
+        </div>
+    </header>
+    
+
+
+
+<div class="container">
+        <div class="projects-wrapper">
+            <div class="project-item-wrapper">
+                <div class="project-item-information-wrapper">
+                    <h2 class="project-title">Meme Generator</h2>
+                    <div class="project-paragraph">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis magnam a quis blanditiis, dolorem quod quaerat doloribus, necessitatibus libero aliquam quasi excepturi earum neque nulla architecto eum voluptate sunt at.</p>
+                    </div>
+                </div>
+                <div class="project-image">
+                    <img src="static/media/meme_generator.png" alt="Meme Gernator">
+                </div>
+            </div>
+            <div class="project-item-wrapper">
+                <div class="project-item-information-wrapper">
+                    <h2 class="project-title">Meme Generator</h2>
+                    <div class="project-paragraph">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis magnam a quis blanditiis, dolorem quod quaerat doloribus, necessitatibus libero aliquam quasi excepturi earum neque nulla architecto eum voluptate sunt at.</p>
+                    </div>
+                </div>
+                <div class="project-image">
+                    <img src="static/media/meme_generator.png" alt="Meme Gernator">
+                </div>
+            </div>
+        </div>
+</div>
+
+<script type="text/javascript" src="script.js"></script>
+<script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script>
+    $(function(){
+        $('a').each(function(){
+            if ($(this).prop('href') == window.location.href) {
+             $(this).addClass('active-page'); $(this).parents('li').addClass('active-page');
+            }
+        });
+    });
+</script>
 </body>
 </html>
