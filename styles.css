@@ -1,13 +1,30 @@
+/* Master Styles */
 body {
     margin: 0px;
-    font-family: 'Montserrat', sans-serif;
+    background-color: #f4f4f4;
+    scroll-behavior: smooth;
+    height: 100%
 }
 
+body, p {
+font-weight: 200;
+font-size: 16px;
+padding: 0px;
+text-align: left;
+letter-spacing: 1px;
+font-family: 'Montserrat', sans-serif;
+} 
+
+/* Nav Styles */
 .nav-wrapper {
     display: flex;
     justify-content: space-between;
-    padding: 38px;
+    padding: 20px;
     background-color: #C2E0E4;
+    position: fixed;
+    width: 100%;
+    height: 20px;
+    z-index: 1500;
 }
 
 .right-side {
@@ -21,15 +38,15 @@ body {
 }
 
 .nav-link-wrapper {
-    height: 22px;
+    height: 20px;
     border-bottom: 1px solid transparent;
-    transition: border-bottom 0.5s;
+    transition: border-bottom 0.3s;
 }
 
 .nav-link-wrapper a {
     color: #8a8a8a;
     text-decoration: none;
-    transition: color 0.5s;
+    transition: color 0.3s;
 }
 
 .nav-link-wrapper:hover {
@@ -39,3 +56,99 @@ body {
 .nav-link-wrapper a:hover {
     color: black;
 }
+
+.logo a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+}
+
+/* About Styles */
+.about-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    /* flex-wrap: wrap; */
+    width: 90%;
+    padding-left: 0%;
+    position: relative;
+    top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    align-content: center;
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    letter-spacing: 6px;
+    font-weight: 600;
+}
+
+.about-headshot {
+    justify-content: center;
+    flex: 1;
+}
+
+.about-headshot img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+    padding: 2%;
+    border: 1px solid white;
+    top: 150px;
+}
+
+.about-paragraph {
+    padding: 5%;
+    flex: 3;
+}
+
+.resume-download {
+    font-size: 15px;
+    font-weight: 900;
+    font-family: 'Archivo Black', sans-serif;
+    padding: 2px;
+    text-decoration: none;
+    color: black;
+}
+
+.resume-download:hover {
+    color: darkgrey;
+  }
+
+
+  @media screen and (max-width: 400px) {
+    .nav-wrapper {
+      font-size: 10px;
+      letter-spacing: 4px;
+    }
+    .logo a {
+        text-decoration: none;
+        color: black;
+        font-size: 10px;
+    }
+    .nav-wrapper > .right-side > div {
+        margin-right: 30px;
+    }
+    .about-wrapper {
+        top: 40px;
+    }
+  }
+
+
+  @media screen and (min-width: 400px) and (max-width: 700px) {
+    .nav-wrapper > .right-side > div {
+        margin-right: 30px;
+        font-size: 15px;
+    }
+    .logo a {
+        text-decoration: none;
+        color: black;
+        font-size: 15px;
+    }
+    .about-wrapper {
+        top:40px;
+    }
+  }
