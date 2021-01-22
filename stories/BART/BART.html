@@ -1,0 +1,372 @@
+<!doctype html>
+<html ⚡>
+
+<head>
+    <meta charset="utf-8">
+    <title>BART Estimated Departure Times</title>
+    <!-- <link rel="canonical" href="pets.html"> -->
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <style amp-boilerplate>
+        body {
+            -webkit-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+            -moz-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+            -ms-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+            animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        @-webkit-keyframes -amp-start {
+            from {
+                visibility: hidden
+            }
+
+            to {
+                visibility: visible
+            }
+        }
+
+        @-moz-keyframes -amp-start {
+            from {
+                visibility: hidden
+            }
+
+            to {
+                visibility: visible
+            }
+        }
+
+        @-ms-keyframes -amp-start {
+            from {
+                visibility: hidden
+            }
+
+            to {
+                visibility: visible
+            }
+        }
+
+        @-o-keyframes -amp-start {
+            from {
+                visibility: hidden
+            }
+
+            to {
+                visibility: visible
+            }
+        }
+
+        @keyframes -amp-start {
+            from {
+                visibility: hidden
+            }
+
+            to {
+                visibility: visible
+            }
+        }
+    </style><noscript>
+        <style amp-boilerplate>
+            body {
+                -webkit-animation: none;
+                -moz-animation: none;
+                -ms-animation: none;
+                animation: none
+            }
+        </style>
+    </noscript>
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+    <script async custom-element="amp-story" src="https://cdn.ampproject.org/v0/amp-story-1.0.js"></script>
+</head>
+<link href="https://fonts.googleapis.com/css?family=Oswald:200,300,400" rel="stylesheet">
+<style amp-custom>
+    amp-story {
+        /* color: black; */
+        color: #fff;
+    }
+
+    amp-story-page {
+        background-color: rgb(67, 65, 194);
+    }
+
+    h1 {
+        font-weight: bold;
+        font-size: 2.5em;
+        font-weight: normal;
+        line-height: 1.1;
+        padding: 0.5em;
+    }
+
+    h3 {
+        margin-bottom: 2px;
+    }
+
+    p {
+        font-weight: normal;
+        /* font-size: 1.3em; */
+        font-size: 1.5em;
+        line-height: 1.5em;
+        color: #fff;
+    }
+
+    q {
+        font-weight: 300;
+        font-size: 1.1em;
+    }
+
+    li {
+        font-size: 1.3em;
+
+    }
+
+    amp-story-grid-layer.bottom {
+        align-content: end;
+    }
+
+    amp-story-grid-layer.noedge {
+        padding: 0px;
+    }
+
+    amp-story-grid-layer.center-text {
+        align-content: center;
+
+    }
+
+    amp-story-grid-layer.screen-video {
+        padding: 1em;
+    }
+
+    .bottom-text {
+        padding-left: 2rem;
+        padding-right: 2rem;
+        align-content: flex-end;
+        background-color: rgb(67, 65, 194, 0.7);
+        opacity: 0.5;
+    }
+
+    .wrapper {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 50% 50%;
+    }
+
+    .banner-text {
+        text-align: center;
+        background-color: #000;
+        line-height: 2em;
+    }
+
+    .functionality {
+        background-color: rgb(121, 118, 118);
+        margin: 2em;
+        padding: 1.5rem;
+        opacity: 0.9;
+    }
+
+    .text-center {
+        text-align: center;
+    }
+
+    .header-dark {
+        background-color: rgb(121, 118, 118);
+    }
+
+    .flex-container {
+        display: flex;
+        justify-content: center;
+        /* align-items: center; */
+        flex-direction: column;
+    }
+
+    hr {
+        margin-left: 0;
+        margin-right: 0;
+        width: 100%;
+    }
+
+    .small-li {
+        font-size: 1em;
+    }
+
+
+    .contact-wrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .contact-information {
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position: relative;
+    }
+
+    .contact-logo-name {
+        text-align: center;
+        color: white;
+        /* font-weight: bolder; */
+        font-size: 15px;
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    .contact-logo-image img {
+        filter: brightness(0) invert(1);
+    }
+
+
+    .contact-logo-image:hover {
+        cursor: pointer;
+    }
+
+    .contact-logo-image:hover+.contact-logo-name {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    .paragraph-link {
+        text-decoration: none;
+        font-weight: 550;
+        color: rgb(204, 197, 197);
+    }
+
+    .paragraph-link:hover {
+        color: black;
+        font-weight: 700;
+    }
+</style>
+</head>
+
+<body>
+    <amp-story standalone title="BART Estimated Departure Times" publisher="Claire Casey" supports-landscape>
+
+        <amp-story-page id="page-1">
+            <amp-story-grid-layer template="fill" style="background-color: #fff;">
+                <!-- <amp-img src="assets/landscape1.jpeg" width="12800" height="1280" layout="responsive"
+                    style="opacity: 0.6" object-position="30% 40%">
+                </amp-img> -->
+                <amp-img src="assets/BART3.jpg" width="12800" height="1280" layout="responsive" style="opacity: 1"
+                    object-position="10% 40%">
+                </amp-img>
+            </amp-story-grid-layer>
+            <amp-story-grid-layer template="fill" position="landscape-half-right">
+                <div class="functionality flex-container m-0" grid-area="lower-third">
+
+                    <h1 class="text-center header-dark p-0">BART Estimated
+                        Restoration Times</h1>
+                    <hr>
+                    <p>Key components include:</p>
+                    <ul>
+                        <li>DATA from the <a class="paragraph-link"
+                                href="http://api.bart.gov/docs/overview/index.aspx">BART API</a>.</li>
+                        <li>Visualizations from Javascript D3 library</li>
+                        <li>Bootstrap CSS</li>
+                    </ul>
+
+                </div>
+
+            </amp-story-grid-layer>
+        </amp-story-page>
+
+        <amp-story-page id="page-2">
+            <amp-story-grid-layer class="screen-video" template="fill">
+                <amp-video autoplay loop width="1000" height="600" noaudio poster="assets/rabbit.jpg"
+                    layout="responsive">
+                    <source src="assets/BART1.mp4" type="video/mp4">
+                </amp-video>
+            </amp-story-grid-layer>
+            <amp-story-grid-layer template="thirds">
+                <div grid-area="lower-third" class="bottom-text flex-container" animate-in="fade-in">
+                    <h3 class="m-2" animate-in="fade-in">Use toolbar to change
+                        displays. Display options include:</h3>
+                    <hr class="m-0">
+                    <ul style="border-top:0px">
+                        <li>Display delays</li>
+                        <li>Display specific BART line</li>
+                        <li>Display by Wait Time</li>
+                    </ul>
+                </div>
+            </amp-story-grid-layer>
+        </amp-story-page>
+
+        <amp-story-page id="page-3">
+            <amp-story-grid-layer class="screen-video" template="fill">
+                <amp-video autoplay loop width="1000" height="600" noaudio poster="assets/rabbit.jpg"
+                    layout="responsive">
+                    <source src="assets/BART3.mp4" type="video/mp4">
+                </amp-video>
+            </amp-story-grid-layer>
+            <amp-story-grid-layer template="thirds">
+                <div grid-area="lower-third" class="bottom-text flex-container" animate-in="fade-in">
+                    <h3 class="m-2" animate-in="fade-in">Display by wait time to
+                        visualize where trains are along route.</h3>
+                    <hr>
+                </div>
+            </amp-story-grid-layer>
+        </amp-story-page>
+
+
+        <amp-story-page id="page-4">
+            <amp-story-grid-layer class="screen-video" template="fill">
+                <amp-video autoplay loop width="1000" height="600" noaudio poster="assets/rabbit.jpg"
+                    layout="responsive">
+                    <source src="assets/BART4.mp4" type="video/mp4">
+                </amp-video>
+            </amp-story-grid-layer>
+            <amp-story-grid-layer template="thirds">
+                <div grid-area="lower-third" class="bottom-text flex-container" animate-in="fade-in">
+                    <h3 class="m-2" animate-in="fade-in">Codebase includes:</h3>
+                    <hr class="m-1">
+                    <ul style="border-top:0px">
+                        <li class="small-li">main.js - create d3 map and update visualizations, listen for events
+                            d3 visualizations</li>
+                        <li class="small-li">filter.js - filter data given a specific BART line
+                            and/or direction</li>
+                        <li class="small-li">requests.js - make Axios AJAX requests to BART API</li>
+                    </ul>
+                </div>
+            </amp-story-grid-layer>
+        </amp-story-page>
+
+
+
+
+        <amp-story-page id="page-5">
+            <amp-story-grid-layer class="screen-video" template="thirds">
+                <div grid-area="middle-third" animate-in="fade-in">
+                    <h3 style="text-align:center">Learn
+                        More.</h3>
+                    <div class="contact-container">
+                        <div class="contact-wrapper">
+                            <div class="contact-information">
+                                <a class="contact-logo-image"
+                                    href="https://www.linkedin.com/in/claire-casey-892a18128/"><img
+                                        src="static/laptop.png" alt="LinkedIn" style="height: 40px;"></a>
+                                <div class="contact-logo-name">Demo</div>
+                            </div>
+                            <div class="contact-information">
+                                <a class="contact-logo-image" href="https://github.com/clairelcasey"><img
+                                        src="static/github.png" alt="LinkedIn" style="height: 40px;"></a>
+                                <div class="contact-logo-name">Github</div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </amp-story-grid-layer>
+        </amp-story-page>
+
+        <amp-story-bookend src="bookend.json" layout="nodisplay"></amp-story-bookend>
+    </amp-story>
+    </amp-story>
+</body>
+
+</html>

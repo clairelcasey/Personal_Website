@@ -1,0 +1,326 @@
+<!doctype html>
+<html ⚡>
+
+<head>
+    <meta charset="utf-8">
+    <title>Covid Tracker</title>
+    <link rel="canonical" href="pets.html">
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <style amp-boilerplate>
+        body {
+            -webkit-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+            -moz-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+            -ms-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+            animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        @-webkit-keyframes -amp-start {
+            from {
+                visibility: hidden
+            }
+
+            to {
+                visibility: visible
+            }
+        }
+
+        @-moz-keyframes -amp-start {
+            from {
+                visibility: hidden
+            }
+
+            to {
+                visibility: visible
+            }
+        }
+
+        @-ms-keyframes -amp-start {
+            from {
+                visibility: hidden
+            }
+
+            to {
+                visibility: visible
+            }
+        }
+
+        @-o-keyframes -amp-start {
+            from {
+                visibility: hidden
+            }
+
+            to {
+                visibility: visible
+            }
+        }
+
+        @keyframes -amp-start {
+            from {
+                visibility: hidden
+            }
+
+            to {
+                visibility: visible
+            }
+        }
+    </style><noscript>
+        <style amp-boilerplate>
+            body {
+                -webkit-animation: none;
+                -moz-animation: none;
+                -ms-animation: none;
+                animation: none
+            }
+        </style>
+    </noscript>
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+    <script async custom-element="amp-story" src="https://cdn.ampproject.org/v0/amp-story-1.0.js"></script>
+</head>
+<link href="https://fonts.googleapis.com/css?family=Oswald:200,300,400" rel="stylesheet">
+<style amp-custom>
+    amp-story {
+        color: #fff;
+    }
+
+    amp-story-page {
+        background-color: rgb(21, 21, 41);
+    }
+
+    h1 {
+        font-weight: bold;
+        font-size: 2.5em;
+        font-weight: normal;
+        line-height: 1.1;
+        padding: 0.5em;
+    }
+
+    p {
+        font-weight: normal;
+        /* font-size: 1.3em; */
+        font-size: 1.5em;
+        line-height: 1.5em;
+        color: #fff;
+    }
+
+    q {
+        font-weight: 300;
+        font-size: 1.1em;
+    }
+
+    li {
+        font-size: 1.3em;
+
+    }
+
+    amp-story-grid-layer.bottom {
+        align-content: end;
+    }
+
+    amp-story-grid-layer.noedge {
+        padding: 0px;
+    }
+
+    amp-story-grid-layer.center-text {
+        align-content: center;
+
+    }
+
+    amp-story-grid-layer.screen-video {
+        padding: 1em;
+    }
+
+    .bottom-text {
+        padding-left: 2rem;
+        padding-right: 2rem;
+        align-content: flex-end;
+    }
+
+    .wrapper {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 50% 50%;
+    }
+
+    .banner-text {
+        text-align: center;
+        background-color: #000;
+        line-height: 2em;
+    }
+
+    .functionality {
+        background-color: rgb(121, 118, 118);
+        margin: 2em;
+        padding: 1.5rem;
+        opacity: 0.9;
+    }
+
+    .text-center {
+        text-align: center;
+    }
+
+    .header-dark {
+        background-color: rgb(121, 118, 118);
+    }
+
+
+    .contact-wrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .contact-information {
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position: relative;
+    }
+
+    .contact-logo-name {
+        text-align: center;
+        color: white;
+        /* font-weight: bolder; */
+        font-size: 15px;
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    .contact-logo-image img {
+        filter: brightness(0) invert(1);
+    }
+
+
+    .contact-logo-image:hover {
+        cursor: pointer;
+    }
+
+    .contact-logo-image:hover+.contact-logo-name {
+        visibility: visible;
+        opacity: 1;
+    }
+</style>
+</head>
+
+<body>
+    <amp-story standalone title="Covid Tracker" publisher="Claire Casey" supports-landscape>
+
+        <amp-story-page id="page-1">
+            <amp-story-grid-layer template="fill" style="background-color: #fff;">
+                <amp-img src="assets/landscape1.jpeg" width="12800" height="1280" layout="responsive"
+                    style="opacity: 0.6" object-position="30% 40%">
+                </amp-img>
+            </amp-story-grid-layer>
+            <amp-story-grid-layer template="fill" position="landscape-half-right">
+                <div class="functionality" animate-in="fade-in" animate-in-duration="3s">
+                    <h1 class="text-center header-dark p-0">Covid Tracker Application</h1>
+                    <hr>
+                    <p>
+                        Key components include:
+                    <ul>
+                        <li>Login/ logout functionality</li>
+                        <li>Visualizations from Javascript D3 library</li>
+                        <li>Object oriented programming</li>
+                        <li>Flask back-end</li>
+                    </ul>
+                    </p>
+
+                </div>
+            </amp-story-grid-layer>
+        </amp-story-page>
+
+        <amp-story-page id="page-2">
+            <amp-story-grid-layer class="screen-video" template="vertical">
+                <h1 animate-in="fade-in">Login to add a tracker.</h1>
+                <amp-video autoplay loop width="1000" height="600" noaudio poster="assets/rabbit.jpg"
+                    layout="responsive">
+                    <source src="assets/1-2.mp4" type="video/mp4">
+                </amp-video>
+                <div class="bottom-text" animate-in="fade-in" animate-in-delay="1s">
+                    <p>Login/ logout authorization handled using: </p>
+                    <ul style="border-top:0px">
+                        <li>WTForm validation</li>
+                        <li>Flask's Session</li>
+                    </ul>
+
+
+                </div>
+            </amp-story-grid-layer>
+        </amp-story-page>
+
+        <amp-story-page id="page-3">
+            <amp-story-grid-layer class="screen-video" template="vertical">
+                <h1 animate-in="fade-in">Interactive D3 Visualizations.</h1>
+                <amp-video autoplay loop width="1000" height="600" noaudio poster="assets/rabbit.jpg"
+                    layout="responsive">
+                    <source src="assets/2.mp4" type="video/mp4">
+                </amp-video>
+                <div class="bottom-text" animate-in="fade-in" animate-in-delay="1s">
+                    <p>Dynamic bar charts for each county a user is following </p>
+                    <ul style="border-top:0px">
+                        <li>Dynamic tooltip</li>
+                        <li>Flask's Session</li>
+                    </ul>
+                </div>
+            </amp-story-grid-layer>
+        </amp-story-page>
+
+        <amp-story-page id="page-4">
+            <amp-story-grid-layer class="screen-video" template="vertical">
+                <h1 animate-in="fade-in">Click to remove a followed county.</h1>
+                <amp-video autoplay loop width="1000" height="600" noaudio poster="assets/rabbit.jpg"
+                    layout="responsive">
+                    <source src="assets/3.mp4" type="video/mp4">
+                </amp-video>
+            </amp-story-grid-layer>
+        </amp-story-page>
+
+        <amp-story-page id="page-5">
+            <amp-story-grid-layer template="fill">
+                <amp-video autoplay loop width="1000" height="600" noaudio poster="assets/rabbit.jpg"
+                    layout="responsive" object-position="5% 40%">
+                    <source src="assets/landscape_objori.mp4" type="video/mp4">
+                </amp-video>
+            </amp-story-grid-layer>
+            <amp-story-grid-layer template="vertical">
+                <h1 animate-in="fade-in">Utilizes Object Oriented Programming</h1>
+            </amp-story-grid-layer>
+        </amp-story-page>
+
+        <amp-story-page id="page-6">
+            <amp-story-grid-layer class="screen-video" template="thirds">
+                <div grid-area="middle-third" animate-in="fade-in">
+                    <h3 style="text-align:center">Learn
+                        More.</h3>
+                    <div class="contact-container">
+                        <div class="contact-wrapper">
+                            <div class="contact-information">
+                                <a class="contact-logo-image"
+                                    href="https://www.linkedin.com/in/claire-casey-892a18128/"><img
+                                        src="static/laptop.png" alt="LinkedIn" style="height: 40px;"></a>
+                                <div class="contact-logo-name">Demo</div>
+                            </div>
+                            <div class="contact-information">
+                                <a class="contact-logo-image" href="https://github.com/clairelcasey"><img
+                                        src="static/github.png" alt="LinkedIn" style="height: 40px;"></a>
+                                <div class="contact-logo-name">Github</div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </amp-story-grid-layer>
+        </amp-story-page>
+
+        <amp-story-bookend src="bookend.json" layout="nodisplay"></amp-story-bookend>
+    </amp-story>
+    </amp-story>
+</body>
+
+</html>

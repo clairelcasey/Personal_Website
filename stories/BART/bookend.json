@@ -1,0 +1,40 @@
+{
+    "bookendVersion": "v1.0",
+    "components": [
+      {
+        "type": "heading",
+        "text": "More to See"
+      },
+      {
+        "type": "portrait",
+        "category": "Project 1",
+        "title": "New discovery found",
+        "url": "http://example.com/article.html",
+        "image": "http://placehold.it/312x416"
+      },
+      {
+        "type": "portrait",
+        "category": "Project 2",
+        "title": "New discovery found",
+        "url": "http://example.com/article.html",
+        "image": "http://placehold.it/312x416"
+      },
+      {
+        "type": "portrait",
+        "category": "Project 2",
+        "title": "New discovery found",
+        "url": "/covid-tracker.html",
+        "image": "/assets/1.jpeg"
+      },
+      {
+        "type": "cta-link",
+        "links": [
+          {
+            "text": "Back to Projects",
+            "url": "https://www.ampproject.org/stories/"
+          }
+        ]
+      }
+    ]
+  }
+  

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,7 +10,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap" rel="stylesheet">
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+    <script async custom-element="amp-story-player"
+        src="https://cdn.ampproject.org/v0/amp-story-player-0.1.js"></script>
 </head>
+
 <body>
     <header>
         <div class="nav-wrapper">
@@ -27,7 +32,7 @@
                         <i class="icon ion-md-close"></i>
                     </div>
                     <li class="nav-item">
-                        <a href="index.html" class="nav-link" class="active-page" >About</a>
+                        <a href="index.html" class="nav-link" class="active-page">About</a>
                     </li>
                     <li class="nav-item">
                         <a href="projects.html" class="nav-link">Projects</a>
@@ -40,59 +45,78 @@
             </nav>
         </div>
     </header>
-    
 
 
 
-<div class="container">
-    <h1 class="project-title-master">PROJECTS.</h1>
+
+    <div class="container">
+        <h1 class="project-title-master">PROJECTS.</h1>
         <div class="projects-wrapper">
-            <div class="project-item-wrapper">
-                <div class="project-item-information-wrapper">
-                    <h2 class="project-title">Meme Generator</h2>
-                    <div class="project-paragraph">
-                        <p>I will fill out this content later.</p>
-                    </div>
-                </div>
-                <div class="project-image">
-                    <img src="static/media/meme_generator.png" alt="Meme Gernator">
-                </div>
-            </div>
-            <div class="project-item-wrapper">
-                <div class="project-item-information-wrapper">
-                    <h2 class="project-title">TBD</h2>
-                    <div class="project-paragraph">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis magnam a quis blanditiis, dolorem quod quaerat doloribus, necessitatibus libero aliquam quasi excepturi earum neque nulla architecto eum voluptate sunt at.</p>
-                    </div>
-                </div>
-                <div class="project-image">
-                    <img src="static/media/meme_generator.png" alt="Meme Gernator">
-                </div>
-            </div>
-            <div class="project-item-wrapper">
-                <div class="project-item-information-wrapper">
-                    <h2 class="project-title">TBD</h2>
-                    <div class="project-paragraph">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis magnam a quis blanditiis, dolorem quod quaerat doloribus, necessitatibus libero aliquam quasi excepturi earum neque nulla architecto eum voluptate sunt at.</p>
-                    </div>
-                </div>
-                <div class="project-image">
-                    <img src="static/media/meme_generator.png" alt="Meme Gernator">
-                </div>
-            </div>
-        </div>
-</div>
 
-<script type="text/javascript" src="script.js"></script>
-<script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
-<script>
-    $(function(){
-        $('a').each(function(){
-            if ($(this).prop('href') == window.location.href) {
-             $(this).addClass('active-page'); $(this).parents('li').addClass('active-page');
-            }
-        });
-    });
-</script>
+            <div class="project-item-wrapper">
+                <div class="project-image">
+                    <amp-story-player layout="fixed" layout="fixed" width="600" height="400">
+                        <a href="/stories/covid-tracker/covid-tracker.html">
+                        </a>
+                    </amp-story-player>
+                </div>
+                <div class="project-item-information-wrapper">
+                    <h2 class="project-title">New York State Covid Tracker</h2>
+                    <b class="project-type">Flask back-end &#8226; Javascript D3 Visualizations</b>
+                    <small class="projects-story-link">View the story full-screen <a class="paragraph-link"
+                            href="/stories/covid-tracker/covid-tracker.html">here</a>.</small>
+                    <div class="project-paragraph">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas cum voluptates quae ex
+                            omnis, hic quaerat unde doloribus earum laborum dolore quam eveniet expedita cumque corporis
+                            temporibus fugiat nulla molestias?</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-item-wrapper">
+                <div class="project-image">
+                    <amp-story-player layout="fixed" layout="fixed" width="600" height="400">
+                        <a href="/stories/BART/BART.html"></a>
+                    </amp-story-player>
+                </div>
+                <div class="project-item-information-wrapper">
+                    <h2 class="project-title">BART Estimated Departure Times</h2>
+                    <b class="project-type">Geographic Data &#8226; Javascript D3 Visualizations</b>
+                    <small class="projects-story-link">View the story full-screen <a class="paragraph-link"
+                            href="/stories/BART/BART.html">here</a>.</small>
+                    <div class="project-paragraph">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas cum voluptates quae ex
+                            omnis, hic quaerat unde doloribus earum laborum dolore quam eveniet expedita cumque corporis
+                            temporibus fugiat nulla molestias?</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-item-wrapper">
+                <div class="project-image">
+                    <amp-story-player layout="fixed" layout="fixed" width="600" height="400">
+                        <a href="/stories/weather-vis/weather-vis.html"></a>
+                    </amp-story-player>
+                </div>
+                <div class="project-item-information-wrapper">
+                    <h2 class="project-title">BART Estimated Departure Times</h2>
+                    <b class="project-type">Geographic Data &#8226; Javascript D3 Visualizations</b>
+                    <small class="projects-story-link">View the story full-screen <a class="paragraph-link"
+                            href="/stories/BART/BART.html">here</a>.</small>
+                    <div class="project-paragraph">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas cum voluptates quae ex
+                            omnis, hic quaerat unde doloribus earum laborum dolore quam eveniet expedita cumque corporis
+                            temporibus fugiat nulla molestias?</p>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+    <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
 </body>
+
 </html>
