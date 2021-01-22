@@ -88,7 +88,7 @@
     }
 
     amp-story-page {
-        background-color: rgb(67, 65, 194);
+        background-color: #4d798d;
     }
 
     h1 {
@@ -142,7 +142,7 @@
         padding-left: 2rem;
         padding-right: 2rem;
         align-content: flex-end;
-        background-color: rgb(67, 65, 194, 0.7);
+        background-color: #4d798d;
         opacity: 0.5;
     }
 
@@ -159,7 +159,7 @@
     }
 
     .functionality {
-        background-color: rgb(121, 118, 118);
+        background-color: #4d798d;
         margin: 2em;
         padding: 1.5rem;
         opacity: 0.9;
@@ -169,9 +169,17 @@
         text-align: center;
     }
 
-    .header-dark {
-        background-color: rgb(121, 118, 118);
+    .center-content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
     }
+
+    .center-content hr {
+        width: 90%;
+    }
+
 
     .flex-container {
         display: flex;
@@ -253,23 +261,27 @@
                 <!-- <amp-img src="assets/landscape1.jpeg" width="12800" height="1280" layout="responsive"
                     style="opacity: 0.6" object-position="30% 40%">
                 </amp-img> -->
-                <amp-video autoplay loop width="1000" height="600" noaudio poster="assets/rabbit.jpg"
-                layout="responsive">
-                <source src="assets/BART1.mp4" type="video/mp4">
-            </amp-video>
+                <amp-video autoplay loop width="1000" height="600" noaudio layout="responsive">
+                    <source src="assets/weather1.mp4" type="video/mp4">
+                </amp-video>
             </amp-story-grid-layer>
             <amp-story-grid-layer template="fill" position="landscape-half-right">
                 <div class="functionality flex-container m-0" grid-area="lower-third">
 
-                    <h1 class="text-center header-dark p-0">BART Estimated
-                        Restoration Times</h1>
+                    <h1 class="text-center header-dark p-0">Historical Weather
+                        Interactive Visualization</h1>
                     <hr>
                     <p>Key components include:</p>
                     <ul>
-                        <li>DATA from the <a class="paragraph-link"
-                                href="http://api.bart.gov/docs/overview/index.aspx">BART API</a>.</li>
-                        <li>Visualizations from Javascript D3 library</li>
-                        <li>Bootstrap CSS</li>
+                        <li>Data from the <a class="paragraph-link"
+                                href="https://www.worldweatheronline.com/developer/">World
+                                Weather API</a>.</li>
+                        <li>Modified <a class="paragraph-link"
+                        href="https://observablehq.com/d/2bd19fa1001f890e">WeatherWheel
+                        class</a> created by Eric Lo.</li>
+                        <li>Download script and data formatting</li>
+                        <li>Single page web application with
+                        interactive visualization</li>
                     </ul>
 
                 </div>
@@ -279,20 +291,20 @@
 
         <amp-story-page id="page-2">
             <amp-story-grid-layer class="screen-video" template="fill">
-                <amp-video autoplay loop width="1000" height="600" noaudio poster="assets/rabbit.jpg"
-                    layout="responsive">
-                    <source src="assets/BART1.mp4" type="video/mp4">
+                <amp-video autoplay loop width="1000" height="600" noaudio layout="responsive">
+                    <source src="assets/weather2.mp4" type="video/mp4">
                 </amp-video>
             </amp-story-grid-layer>
             <amp-story-grid-layer template="thirds">
                 <div grid-area="lower-third" class="bottom-text flex-container" animate-in="fade-in">
-                    <h3 class="m-2" animate-in="fade-in">Use toolbar to change
-                        displays. Display options include:</h3>
+                    <h3 class="m-2" animate-in="fade-in">Hover over WeatherWheel
+                        to view:</h3>
                     <hr class="m-0">
-                    <ul style="border-top:0px">
-                        <li>Display delays</li>
-                        <li>Display specific BART line</li>
-                        <li>Display by Wait Time</li>
+                    <ul style="border-top:0px" class="mt-2">
+                        <li>Yearly and monthly statistics for weather conditions
+                            (e.g. sunny days)</li>
+                        <li>Daily statistics including precipitation, high and
+                            low temperatures</li>
                     </ul>
                 </div>
             </amp-story-grid-layer>
@@ -300,16 +312,19 @@
 
         <amp-story-page id="page-3">
             <amp-story-grid-layer class="screen-video" template="fill">
-                <amp-video autoplay loop width="1000" height="600" noaudio poster="assets/rabbit.jpg"
-                    layout="responsive">
-                    <source src="assets/BART3.mp4" type="video/mp4">
+                <amp-video autoplay loop width="1000" height="600" noaudio layout="responsive">
+                    <source src="assets/weather3.mp4" type="video/mp4">
                 </amp-video>
             </amp-story-grid-layer>
             <amp-story-grid-layer template="thirds">
                 <div grid-area="lower-third" class="bottom-text flex-container" animate-in="fade-in">
-                    <h3 class="m-2" animate-in="fade-in">Display by wait time to
-                        visualize where trains are along route.</h3>
-                    <hr>
+                    <h3 class="m-2" animate-in="fade-in">Update data to show in
+                        WeatherWheel by either:</h3>
+                    <hr class="m-0">
+                    <ul style="border-top:0px" class="mt-2">
+                        <li>Selecting city by images at the top</li>
+                        <li>Selecting year using dropdown selector</li>
+                    </ul>
                 </div>
             </amp-story-grid-layer>
         </amp-story-page>
@@ -317,30 +332,46 @@
 
         <amp-story-page id="page-4">
             <amp-story-grid-layer class="screen-video" template="fill">
-                <amp-video autoplay loop width="1000" height="600" noaudio poster="assets/rabbit.jpg"
-                    layout="responsive">
-                    <source src="assets/BART4.mp4" type="video/mp4">
+                <amp-video autoplay loop width="1000" height="600" noaudio layout="responsive">
+                    <source src="assets/weather4.mp4" type="video/mp4">
                 </amp-video>
             </amp-story-grid-layer>
             <amp-story-grid-layer template="thirds">
                 <div grid-area="lower-third" class="bottom-text flex-container" animate-in="fade-in">
                     <h3 class="m-2" animate-in="fade-in">Codebase includes:</h3>
-                    <hr class="m-1">
-                    <ul style="border-top:0px">
-                        <li class="small-li">main.js - create d3 map and update visualizations, listen for events
-                            d3 visualizations</li>
-                        <li class="small-li">filter.js - filter data given a specific BART line
-                            and/or direction</li>
-                        <li class="small-li">requests.js - make Axios AJAX requests to BART API</li>
+                    <hr class="m-0">
+                    <ul style="border-top:0px" class="mt-2">
+                        <li class="small-li">_downloads.js - back-end download
+                            script to download and format data based on a list of
+                            years and cities</li>
+                        <li class="small-li">WeatherWheel.js - external class
+                            modified for specific data and display</li>
+                        <li class="small-li">display.js - front-end script</li>
                     </ul>
+                </div>
+            </amp-story-grid-layer>
+        </amp-story-page>
+
+        <amp-story-page id="page-5">
+            <amp-story-grid-layer class="screen-video" template="fill">
+                <div class="center-content" animate-in="fade-in">
+                    <h1>Key Takeaways:</h1>
+                    <hr>
+                    <div>
+                        <ul class="m-5">
+                            <li>Benefits of using OOP when sharing code with others</li>
+                            <li>Learning to modify components of code written by others</li>
+                            <li>Benefits of single page web applications when
+                                creating interactive visualizations</li>
+                        </ul>
+                    </div>
                 </div>
             </amp-story-grid-layer>
         </amp-story-page>
 
 
 
-
-        <amp-story-page id="page-5">
+        <amp-story-page id="page-6">
             <amp-story-grid-layer class="screen-video" template="thirds">
                 <div grid-area="middle-third" animate-in="fade-in">
                     <h3 style="text-align:center">Learn
@@ -348,25 +379,22 @@
                     <div class="contact-container">
                         <div class="contact-wrapper">
                             <div class="contact-information">
-                                <a class="contact-logo-image"
-                                    href="https://www.linkedin.com/in/claire-casey-892a18128/"><img
+                                <a class="contact-logo-image" href="https://clairecasey-weather-vis.herokuapp.com/"><img
                                         src="static/laptop.png" alt="LinkedIn" style="height: 40px;"></a>
                                 <div class="contact-logo-name">Demo</div>
                             </div>
                             <div class="contact-information">
-                                <a class="contact-logo-image" href="https://github.com/clairelcasey"><img
+                                <a class="contact-logo-image" href="https://github.com/clairelcasey/weather-vis"><img
                                         src="static/github.png" alt="LinkedIn" style="height: 40px;"></a>
                                 <div class="contact-logo-name">Github</div>
                             </div>
                         </div>
                     </div>
-
                 </div>
             </amp-story-grid-layer>
         </amp-story-page>
 
         <amp-story-bookend src="bookend.json" layout="nodisplay"></amp-story-bookend>
-    </amp-story>
     </amp-story>
 </body>
 
