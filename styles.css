@@ -154,8 +154,8 @@ nav{
 .about-wrapper {
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
-    align-items: flex-start;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     padding-left: 0%;
     position: absolute;
@@ -172,11 +172,8 @@ nav{
 
 
 .about-headshot {
-    justify-content: flex-start;
-    flex: 1;
     padding: 1rem;
-    margin-left: 5rem;
-    margin-top: 100px;
+    margin: 5rem;
 }
 
 .about-headshot img {

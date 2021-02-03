@@ -188,7 +188,7 @@
     }
 
     .small-li {
-        font-size: 1em;
+        font-size: 1rem;
     }
 
 
@@ -242,6 +242,23 @@
         color: black;
         font-weight: 700;
     }
+
+    @media screen and (min-width: 490px) and (max-width: 700px) {
+        p, ul, li {
+            font-size:small;
+        }
+
+    }
+
+    @media screen and (min-width: 10px) and (max-width: 490px){
+        p, ul, li {
+            font-size:small;
+        }
+
+        h1, h3 {
+            font-size:1rem;
+        }
+    }
 </style>
 </head>
 
@@ -265,7 +282,7 @@
                     <hr>
                     <p>Key components include:</p>
                     <ul>
-                        <li>DATA from the <a class="paragraph-link"
+                        <li>Data from the <a class="paragraph-link"
                                 href="http://api.bart.gov/docs/overview/index.aspx">BART API</a>.</li>
                         <li>Visualizations from Javascript D3 library</li>
                         <li>Bootstrap CSS</li>
@@ -348,12 +365,12 @@
                         <div class="contact-wrapper">
                             <div class="contact-information">
                                 <a class="contact-logo-image"
-                                    href="https://www.linkedin.com/in/claire-casey-892a18128/"><img
+                                    href="http://claire-casey-bart.surge.sh/"><img
                                         src="static/laptop.png" alt="LinkedIn" style="height: 40px;"></a>
                                 <div class="contact-logo-name">Demo</div>
                             </div>
                             <div class="contact-information">
-                                <a class="contact-logo-image" href="https://github.com/clairelcasey"><img
+                                <a class="contact-logo-image" href="https://github.com/clairelcasey/BARTStations"><img
                                         src="static/github.png" alt="LinkedIn" style="height: 40px;"></a>
                                 <div class="contact-logo-name">Github</div>
                             </div>

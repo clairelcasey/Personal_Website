@@ -195,7 +195,7 @@
     }
 
     .small-li {
-        font-size: 1em;
+        font-size: 1rem;
     }
 
 
@@ -249,6 +249,25 @@
         color: black;
         font-weight: 700;
     }
+
+
+
+    @media screen and (min-width: 490px) and (max-width: 700px) {
+        p, ul, li {
+            font-size:small;
+        }
+
+    }
+
+    @media screen and (min-width: 10px) and (max-width: 490px){
+        p, ul, li {
+            font-size:small;
+        }
+
+        h1, h3 {
+            font-size:1rem;
+        }
+    }
 </style>
 </head>
 
@@ -258,9 +277,6 @@
         <amp-story-page id="page-1">
             <amp-story-grid-layer template="fill" style="background-color:
             #fff;" position="landscape-half-left">
-                <!-- <amp-img src="assets/landscape1.jpeg" width="12800" height="1280" layout="responsive"
-                    style="opacity: 0.6" object-position="30% 40%">
-                </amp-img> -->
                 <amp-video autoplay loop width="1000" height="600" noaudio layout="responsive">
                     <source src="assets/weather1.mp4" type="video/mp4">
                 </amp-video>
@@ -280,8 +296,6 @@
                         href="https://observablehq.com/d/2bd19fa1001f890e">WeatherWheel
                         class</a> created by Eric Lo.</li>
                         <li>Download script and data formatting</li>
-                        <li>Single page web application with
-                        interactive visualization</li>
                     </ul>
 
                 </div>
@@ -361,8 +375,7 @@
                         <ul class="m-5">
                             <li>Benefits of using OOP when sharing code with others</li>
                             <li>Learning to modify components of code written by others</li>
-                            <li>Benefits of single page web applications when
-                                creating interactive visualizations</li>
+                            <li>Learning to manipulate data from a third party API</li>
                         </ul>
                     </div>
                 </div>
