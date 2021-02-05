@@ -86,7 +86,7 @@
     }
 
     amp-story-page {
-        /* background-color: rgb(21, 21, 41); */
+        background-color:rgb(121, 118, 118);
     }
 
     h1 {
@@ -140,7 +140,7 @@
         padding-left: 2rem;
         padding-right: 2rem;
         align-content: flex-end;
-        background-color: rgb(131, 137, 186);
+        background-color: rgb(121, 118, 118);
         opacity: 0.5;
     }
 
@@ -313,9 +313,10 @@
         </amp-story-page>
 
 
-        <amp-story-page id="page-2">
+        <amp-story-page id="page-2" auto-advance-after="covid4">
             <amp-story-grid-layer class="screen-video" template="fill">
-                <amp-video autoplay loop width="1000" height="600" noaudio layout="responsive">
+                <amp-video autoplay loop width="1000" height="600" noaudio
+                layout="responsive" id="covid4">
                     <source src="assets/covid4.mp4" type="video/mp4">
                 </amp-video>
             </amp-story-grid-layer>
@@ -334,10 +335,10 @@
         </amp-story-page>
 
 
-        <amp-story-page id="page-3">
+        <amp-story-page id="page-3" auto-advance-after="covid3">
             <amp-story-grid-layer class="screen-video" template="fill">
                 <amp-video autoplay loop width="1000" height="600" noaudio 
-                    layout="responsive" object-position="10%">
+                    layout="responsive" object-position="10%" id="covid3">
                     <source src="assets/covid3.mp4" type="video/mp4">
                 </amp-video>
             </amp-story-grid-layer>
@@ -350,9 +351,10 @@
         </amp-story-page>
 
 
-        <amp-story-page id="page-4">
+        <amp-story-page id="page-4" auto-advance-after="covid1">
             <amp-story-grid-layer class="screen-video" template="fill">
-                <amp-video autoplay loop width="1000" height="600" noaudio layout="responsive">
+                <amp-video autoplay loop width="1000" height="600" noaudio
+                layout="responsive" id="covid1">
                     <source src="assets/covid1.mp4" type="video/mp4">
                 </amp-video>
             </amp-story-grid-layer>
@@ -369,10 +371,10 @@
         </amp-story-page>
 
 
-        <amp-story-page id="page-5">
+        <amp-story-page id="page-5" auto-advance-after="landscape_objori">
             <amp-story-grid-layer template="fill">
                 <amp-video autoplay loop width="1000" height="600" noaudio 
-                    layout="responsive" object-position="5% 40%">
+                    layout="responsive" object-position="5% 40%" id="landscape_objori">
                     <source src="assets/landscape_objori.mp4" type="video/mp4">
                 </amp-video>
             </amp-story-grid-layer>
@@ -381,7 +383,7 @@
             </amp-story-grid-layer>
         </amp-story-page>
 
-        <amp-story-page id="page-6">
+        <amp-story-page id="page-6" auto-advance-after="7s">
             <amp-story-grid-layer class="screen-video" template="thirds">
                 <div grid-area="middle-third" animate-in="fade-in">
                     <h3 style="text-align:center">Learn

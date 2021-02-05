@@ -89,7 +89,7 @@
     }
 
     amp-story-page {
-        background-color: rgb(67, 65, 194);
+        background-color: rgb(76, 135, 103);
     }
 
     h1 {
@@ -143,7 +143,7 @@
         padding-left: 2rem;
         padding-right: 2rem;
         align-content: flex-end;
-        background-color: rgb(67, 65, 194, 0.7);
+        background-color: rgb(76, 135, 103);
         opacity: 0.5;
     }
 
@@ -160,7 +160,7 @@
     }
 
     .functionality {
-        background-color: rgb(121, 118, 118);
+        background-color: rgb(76, 135, 103);
         margin: 2em;
         padding: 1.5rem;
         opacity: 0.9;
@@ -171,7 +171,7 @@
     }
 
     .header-dark {
-        background-color: rgb(121, 118, 118);
+        background-color: rgb(76, 135, 103);
     }
 
     .flex-container {
@@ -266,13 +266,15 @@
     <amp-story standalone title="BART Estimated Departure Times" publisher="Claire Casey" supports-landscape>
 
         <amp-story-page id="page-1">
-            <amp-story-grid-layer template="fill" style="background-color: #fff;">
+            <amp-story-grid-layer template="fill" style="background-color:
+            #fff;" position="landscape-half-left">
                 <!-- <amp-img src="assets/landscape1.jpeg" width="12800" height="1280" layout="responsive"
                     style="opacity: 0.6" object-position="30% 40%">
                 </amp-img> -->
-                <amp-img src="assets/BART3.jpg" width="12800" height="1280" layout="responsive" style="opacity: 1"
-                    object-position="10% 40%">
-                </amp-img>
+                <amp-video autoplay loop width="1000" height="600" noaudio 
+                    layout="responsive" id="bart3" object-position="20% -50%">
+                    <source src="assets/BART3.mp4" type="video/mp4">
+                </amp-video>
             </amp-story-grid-layer>
             <amp-story-grid-layer template="fill" position="landscape-half-right">
                 <div class="functionality flex-container m-0" grid-area="lower-third">
@@ -293,10 +295,10 @@
             </amp-story-grid-layer>
         </amp-story-page>
 
-        <amp-story-page id="page-2">
+        <amp-story-page id="page-2" auto-advance-after="bart1">
             <amp-story-grid-layer class="screen-video" template="fill">
                 <amp-video autoplay loop width="1000" height="600" noaudio 
-                    layout="responsive">
+                    layout="responsive" id="bart1">
                     <source src="assets/BART1.mp4" type="video/mp4">
                 </amp-video>
             </amp-story-grid-layer>
@@ -314,10 +316,10 @@
             </amp-story-grid-layer>
         </amp-story-page>
 
-        <amp-story-page id="page-3">
+        <amp-story-page id="page-3" auto-advance-after="bart3">
             <amp-story-grid-layer class="screen-video" template="fill">
                 <amp-video autoplay loop width="1000" height="600" noaudio 
-                    layout="responsive">
+                    layout="responsive" id="bart3">
                     <source src="assets/BART3.mp4" type="video/mp4">
                 </amp-video>
             </amp-story-grid-layer>
@@ -331,10 +333,10 @@
         </amp-story-page>
 
 
-        <amp-story-page id="page-4">
+        <amp-story-page id="page-4" auto-advance-after="bart4">
             <amp-story-grid-layer class="screen-video" template="fill">
                 <amp-video autoplay loop width="1000" height="600" noaudio 
-                    layout="responsive">
+                    layout="responsive" id="bart4">
                     <source src="assets/BART4.mp4" type="video/mp4">
                 </amp-video>
             </amp-story-grid-layer>
@@ -356,7 +358,7 @@
 
 
 
-        <amp-story-page id="page-5">
+        <amp-story-page id="page-5" auto-advance-after="7s">
             <amp-story-grid-layer class="screen-video" template="thirds">
                 <div grid-area="middle-third" animate-in="fade-in">
                     <h3 style="text-align:center">Learn

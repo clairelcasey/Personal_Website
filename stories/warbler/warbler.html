@@ -281,10 +281,11 @@
 <body>
     <amp-story standalone title="Warbler Flask Application" publisher="Claire Casey" supports-landscape>
 
-        <amp-story-page id="page-1">
+        <amp-story-page id="page-1" >
             <amp-story-grid-layer template="fill" style="background-color:
             #fff;" position="landscape-half-left">
-                <amp-video autoplay loop width="1000" height="600" noaudio layout="responsive">
+                <amp-video autoplay loop width="1000" height="600" noaudio
+                layout="responsive" id = "warbler2">
                     <source src="assets/warbler2.mp4" type="video/mp4">
                 </amp-video>
             </amp-story-grid-layer>
@@ -308,11 +309,11 @@
             </amp-story-grid-layer>
         </amp-story-page>
 
-        <amp-story-page id="page-2">
+        <amp-story-page id="page-2" auto-advance-after="warbler1">
             <amp-story-grid-layer class="screen-video" template="fill">
                 <amp-video autoplay loop width="1000" height="600" noaudio
-                layout="responsive" object-position="-20% -20%">
-                    <source src="assets/warbler1.mp4" type="video/mp4">
+                layout="responsive" object-position="-20% -20%" id="warbler1">
+                    <source src="assets/warbler1.mp4" type="video/mp4" >
                 </amp-video>
             </amp-story-grid-layer>
             <amp-story-grid-layer template="thirds">
@@ -329,10 +330,10 @@
             </amp-story-grid-layer>
         </amp-story-page>
 
-        <amp-story-page id="page-3">
+        <amp-story-page id="page-3" auto-advance-after="warbler2">
             <amp-story-grid-layer class="screen-video" template="fill">
                 <amp-video autoplay loop width="1000" height="600" noaudio
-                layout="responsive" object-position="0% 0%">
+                layout="responsive" object-position="0% 0%" id="warbler2">
                     <source src="assets/warbler2.mp4" type="video/mp4">
                 </amp-video>
             </amp-story-grid-layer>
@@ -350,10 +351,10 @@
         </amp-story-page>
 
 
-        <amp-story-page id="page-4">
+        <amp-story-page id="page-4" auto-advance-after="warbler3">
             <amp-story-grid-layer class="screen-video" template="fill">
                 <amp-video autoplay loop width="1000" height="600" noaudio
-                layout="responsive" object-position="0% 0%">
+                layout="responsive" object-position="0% 0%" id="warbler3">
                     <source src="assets/warbler3.mp4" type="video/mp4">
                 </amp-video>
             </amp-story-grid-layer>
@@ -372,10 +373,10 @@
             </amp-story-grid-layer>
         </amp-story-page>
 
-        <amp-story-page id="page-5">
+        <amp-story-page id="page-5" auto-advance-after="warbler4">
             <amp-story-grid-layer class="screen-video" template="fill">
                 <amp-video autoplay loop width="1000" height="600" noaudio
-                layout="responsive" object-position="0% 0%">
+                layout="responsive" object-position="0% 0%" id="warbler4">
                     <source src="assets/warbler4.mp4" type="video/mp4">
                 </amp-video>
             </amp-story-grid-layer>
@@ -392,7 +393,7 @@
         </amp-story-page>
 
 
-        <amp-story-page id="page-6">
+        <amp-story-page id="page-6" auto-advance-after="7s">
             <amp-story-grid-layer class="screen-video" template="fill">
                 <div class="center-content" animate-in="fade-in">
                     <h1>Key Takeaways:</h1>
@@ -412,7 +413,7 @@
 
 
 
-        <amp-story-page id="page-7">
+        <amp-story-page id="page-7" auto-advance-after="7s">
             <amp-story-grid-layer class="screen-video" template="thirds">
                 <div grid-area="middle-third" animate-in="fade-in">
                     <h3 style="text-align:center">Learn
